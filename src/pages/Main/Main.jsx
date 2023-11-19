@@ -1,10 +1,9 @@
 import React from 'react';
+import Landing from '../../components/Landing';
 
 function Main () {
     return (
-        <div className='mt-24 text-center font-bold'>
-            Hi, my name is Mayu!
-        </div>
+        <Landing />
     );
 }
 
