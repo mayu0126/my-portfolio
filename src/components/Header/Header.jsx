@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 
 const navigation = [
   { name: 'About me', href: 'aboutme' },
   { name: 'Projects', href: 'projects' },
+  { name: 'Education', href: 'education' },
+  { name: 'Skills', href: 'skills' },
   { name: 'Resume', href: 'resume' },
   { name: `Let's talk`, href: 'letstalk' },
 
@@ -12,6 +14,20 @@ const navigation = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCloseIcon, setIsCloseIcon] = useState(false);
+  const [isHeaderOpen, setIsHeaderOpen] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setIsHeaderOpen(currentScrollPos <= 0); // görgetés irányának ellenőrzésére
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,8 +40,8 @@ const Header = () => {
   };
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-white">
-      <nav className="flex items-center justify-between p-4 xl:px-4" aria-label="Global">
+    <header className={`fixed top-0 left-0 right-0 bg-white z-50 transition-all duration-300 ${isHeaderOpen ? 'h-28' : 'h-20'}`}>
+      <nav className={`flex items-center justify-between p-4 xl:px-4" aria-label="Global" ${isHeaderOpen ? 'h-28' : 'h-20'}`}>
 
         <div className="flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center">
