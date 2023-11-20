@@ -1,10 +1,14 @@
 import React from 'react';
 import Landing from '../../components/Landing';
+import AboutMe from '../../components/AboutMe';
 
 
 function Main () {
     return (
-        <Landing />
+        <div>
+            <Landing />,
+            <AboutMe />
+        </div>
     );
 }
 
