@@ -4,15 +4,23 @@ import { React, useState } from 'react';
 function Landing () {
  return (
     <div className='flex justify-center items-center h-screen'>
-        <div className='w-1/3 h-96 ml-36 px-2 py-2 bg-slate-950 text-zinc-200 text-left'>
-            <div className='text-lg'>Hey! I'm</div>
-            <div className='font-bold text-5xl'>Ildikó Pintér</div>
-            <div className='font-bold text-xl'>Full-Stack Developer</div>
-            <div className='mt-5 font text-lg'>
-                I'm a passionate junior full-stack developer who is dedicated to crafting immersive digital experiences
-                through web development and design. With a background in food trade and a knack for understanding food law
-                and labeling, I've made a pivot into the dynamic world of software engineering. I completed my full-stack
-                software development studies at Codecool in October this year.
+        <div className='mt-36 w-1/3 px-2 py-2 text-white text-left'>
+            <div className='text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
+                Hey! I'm
+            </div>
+            <div className='font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-amber-100'>
+                Ildikó Pintér
+            </div>
+            <div className='font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
+                Full-Stack Developer
+            </div>
+            <div className='mt-5 text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
+                I'm a passionate junior full-stack developer who is dedicated to
+                crafting immersive digital experiences through web development and
+                design. With a background in food trade and a knack for understanding
+                food law and labeling, I've made a pivot into the dynamic world of
+                software engineering. I completed my full-stack software development
+                studies at Codecool in October this year.
             </div>
             <div className='flex mt-5'>
                 {/*FB*/}
@@ -63,12 +71,20 @@ function Landing () {
                     d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
                 </svg>
             </div>
+            <div className='mt-8 flex text-xs xs:text-xs sm:text-xs md:text-sm lg:text-base'>
+                <button className='bg-cyan-700 hover:bg-cyan-600 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded-full xs:mr-2 sm:mr-4 md:mr-6 lg:mr-8 xl:mr-10'>
+                    Contact Me
+                </button>
+                <button className='bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
+                    Download CV
+                </button>
+            </div>
         </div>
-        <div className='w-1/3 h-96 mr-36 text-center flex justify-center items-center bg-slate-950'>
-            <div className='w-80 h-80 bg-slate-400 flex justify-center items-center'>
+
+        <div className='sm:mr-16 sm:w-1/4 md:mr-24 lg:w-1/3 lg:mr-36 mt-36 text-center flex justify-center items-center'>
+            <div className='xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 bg-slate-400 flex justify-center items-center rounded-full'>
                 <div className='font-bold text-zinc-100'>Picture</div>
             </div>
-
         </div>
     </div>
  )
