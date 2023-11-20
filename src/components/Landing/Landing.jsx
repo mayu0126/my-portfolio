@@ -4,7 +4,7 @@ import { React, useState } from 'react';
 function Landing () {
  return (
     <div className='flex justify-center items-center h-screen'>
-        <div className='w-1/3 h-96 ml-36 px-2 py-2 bg-slate-200 text-left'>
+        <div className='w-1/3 h-96 ml-36 px-2 py-2 bg-slate-950 text-zinc-200 text-left'>
             <div className='text-lg'>Hey! I'm</div>
             <div className='font-bold text-5xl'>Ildikó Pintér</div>
             <div className='font-bold text-xl'>Full-Stack Developer</div>
@@ -64,8 +64,11 @@ function Landing () {
                 </svg>
             </div>
         </div>
-        <div className='w-1/3 h-96 mr-36 text-center flex justify-center items-center bg-slate-200'>
-            <div className='font-bold'>Picture</div>
+        <div className='w-1/3 h-96 mr-36 text-center flex justify-center items-center bg-slate-950'>
+            <div className='w-80 h-80 bg-slate-400 flex justify-center items-center'>
+                <div className='font-bold text-zinc-100'>Picture</div>
+            </div>
+
         </div>
     </div>
  )
