@@ -82,10 +82,12 @@ function Landing () {
         </div>
 
         <div className='sm:mr-16 sm:w-1/4 md:mr-24 lg:w-1/3 lg:mr-36 mt-36 text-center flex justify-center items-center'>
-            <div className='xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 bg-slate-400 flex justify-center items-center rounded-full'>
-                <div className='font-bold text-zinc-100'>Picture</div>
+            <div className='w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-80 lg:h-80 xl:w-96 xl:h-96 flex justify-center items-center rounded-full overflow-hidden'>
+                <a href="https://imgur.com/iCTFpiy">
+                    <img class="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />
+                </a>
             </div>
-        </div>
+    </div>
     </div>
  )
 }
