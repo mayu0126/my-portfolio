@@ -37,21 +37,17 @@ function Landing () {
                             Hey! I'm
                         </div>
                         <div className='font-bold text-2xl text-amber-100'>
-                            Ildikó Pintér
+                            <div>ILDIKÓ PINTÉR</div>
+                            <div className='-mt-1 font-light text-lg'>- MAYU -</div>
                         </div>
                         <div className='font-bold text-xs sm:text-sm'>
                             Full-Stack Developer
                         </div>
                     </div>
                     <div className='mt-5 text-xs sm:text-xs text-justify'>
-                        I'm a passionate junior full-stack developer who is dedicated to
-                        crafting immersive digital experiences through web development and
-                        design. With a background in food trade and a knack for understanding
-                        food law and labeling, I've made a pivot into the dynamic world of
-                        software engineering. I completed my full-stack software development
-                        studies at Codecool in October this year.
+                        I'm an enthusiastic junior full-stack developer with a passion for continual learning. I'm known for my sociable and helpful nature, which extends beyond the workplace to my personal life. I maintain a range of hobbies and thrive on a consistently active lifestyle.
                     </div>
-                    <div className='flex mt-5'>
+                    <div className='flex items-center justify-center mt-5'>
                         {/*FB*/}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -115,23 +111,18 @@ function Landing () {
         ) : (
 
         <div className='flex justify-center items-center h-screen'>
-            <div className={`mt-36 ${isNarrowScreen ? 'flex-col': 'flex-row'} w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left`}>
+            <div className={`mt-36 w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left`}>
                 <div className='text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
                     Hey! I'm
                 </div>
-                <div className='font-bold text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-amber-100'>
-                    Ildikó Pintér
+                <div className='font-bold text-lg sm:text-2xl lg:text-2xl xl:text-4xl text-amber-100'>
+                    ILDIKÓ PINTÉR <span className='font-light'>- MAYU -</span>
                 </div>
                 <div className='font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
                     Full-Stack Developer
                 </div>
                 <div className='mt-5 text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
-                    I'm a passionate junior full-stack developer who is dedicated to
-                    crafting immersive digital experiences through web development and
-                    design. With a background in food trade and a knack for understanding
-                    food law and labeling, I've made a pivot into the dynamic world of
-                    software engineering. I completed my full-stack software development
-                    studies at Codecool in October this year.
+                    I'm an enthusiastic junior full-stack developer with a passion for continual learning. I'm known for my sociable and helpful nature, which extends beyond the workplace to my personal life. I maintain a range of hobbies and thrive on a consistently active lifestyle.
                 </div>
                 <div className='flex mt-5'>
                     {/*FB*/}
