@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center">
             <img
-              className="h-16 w-auto"
+              className={`w-auto transition-all duration-500 ${isHeaderOpen ? 'h-16' : 'h-12'}`}
               src="https://pngimg.com/uploads/letter_m/letter_m_PNG120.png"
               alt=""
             />
@@ -89,8 +89,8 @@ const Header = () => {
               <div className="absolute top-16 right-0 w-48 bg-white border border-gray-200 rounded-lg p-2">
                   <>
                   {navigation.map((item) => (
-                    <Link key={item.name} to={item.href} onClick={closeMenu} className="text-sm font-semibold leading-6 block px-4 py-2 text-gray-900 hover:bg-gray-100">
-                      {item.name}
+                    <Link key={item.name} to={item.href} onClick={closeMenu} className={`text-sm ${item.name === "Projects" ? 'text-cyan-700 font-bold' : 'text-slate-800 font-semibold'} leading-6 block px-4 py-2 hover:bg-gray-100`}>
+                      {item.name.toUpperCase()}
                     </Link>
                   ))
                   }
@@ -100,10 +100,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex md:gap-x-12">
+        <div className="hidden md:flex md:gap-x-10">
           {navigation.map((item) => (
-            <Link key={item.name} to={item.href} className="text-base font-semibold text-slate-800 hover:text-slate-600">
-              {item.name}
+            <Link key={item.name} to={item.href} className={`text-base ${item.name === "Projects" ? 'hover:text-cyan-600 text-cyan-700 font-bold' : 'hover:text-slate-600 text-slate-800 font-semibold'}`}>
+              {item.name.toUpperCase()}
             </Link>
           ))}
         </div>
