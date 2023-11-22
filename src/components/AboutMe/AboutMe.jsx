@@ -5,16 +5,15 @@ const AboutMe = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return(
-    <div className='flex justify-center items-center h-96 bg-white'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Sed sagittis libero quis risus rutrum, at accumsan augue ullamcorper. 
-      Maecenas vitae turpis bibendum, tincidunt dui quis, fringilla arcu. 
-      Nullam in dictum nisi, sit amet congue diam. Suspendisse potenti. 
-      Phasellus non dolor quis purus volutpat scelerisque eu eu erat. 
-      Proin non eleifend neque. Nullam fermentum, ligula ut varius accumsan,
-      velit mauris tincidunt nibh, nec pellentesque sapien augue sit amet lectus. 
-      Donec nec convallis eros. Cras fermentum ligula ipsum, nec consectetur arcu blandit id. 
-      Proin dapibus ante rhoncus, pulvinar felis ullamcorper, faucibus mi. Vivamus sagittis eget nunc ut porta.
+    <div className='flex justify-center items-center h-screen bg-slate-100'>
+      <div className={`w-2/3 sm:w-1/3 px-2 py-2 text-slate-900`}>
+        <div className='text-center'>
+          <div className='mb-10 font-bold text-2xl xl:text-4xl text-cyan-700'>WHO I AM</div>
+          <div className='text-justify'>
+            My name's Mayu. I'm a passionate full-stack developer based in Budapest, HU. I'm dedicated to crafting immersive digital experiences through web development and design. With a background in food trade and a knack for understanding food law and labeling, I've made a pivot into the dynamic world of software engineering. I completed my full-stack software development studies at Codecool in October this year and I'm open to work currently.
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
