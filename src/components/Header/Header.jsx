@@ -61,9 +61,9 @@ const Header = () => {
               onClick={toggleMenu}
             >
               {isCloseIcon ? (
-                // X ikon
+                // X icon
                 <svg
-                  className="h-6 w-6 text-slate-600"
+                  className="h-6 w-6 text-cyan-700"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -72,24 +72,25 @@ const Header = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                // Hamburger ikon
+                // Hamburger icon
+
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-cyan-700"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
               )}
               
             </button>
             {isMenuOpen && (
-              <div className="absolute top-16 right-0 w-48 bg-white border border-gray-200 rounded-lg p-2">
+              <div className="absolute top-16 right-0 w-48 bg-white border border-slate-200 rounded-lg p-2">
                   <>
                   {navigation.map((item) => (
-                    <Link key={item.name} to={item.href} onClick={closeMenu} className={`text-sm ${item.name === "Projects" ? 'text-cyan-700 font-bold' : 'text-slate-800 font-semibold'} leading-6 block px-4 py-2 hover:bg-gray-100`}>
+                    <Link key={item.name} to={item.href} onClick={closeMenu} className={`text-sm ${item.name === "Projects" ? 'text-cyan-700 font-bold' : 'text-slate-800 font-semibold'} leading-6 block px-4 py-2 hover:bg-slate-100`}>
                       {item.name.toUpperCase()}
                     </Link>
                   ))
