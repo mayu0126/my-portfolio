@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { React, useState, useEffect } from 'react';
 
-const Projects = () => {
+const Projects = ({id}) => {
 
   return(
-    <div className='flex justify-center items-center h-screen bg-slate-900'>
+    <div id={id} className='flex justify-center items-center h-screen bg-slate-900'>
       <div className={`w-3/4 px-2 py-2 text-white`}>
         <div className='text-center'>
           <div className='mb-20 font-bold text-2xl xl:text-4xl text-amber-100'>PROJECTS</div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { React, useState, useEffect } from 'react';
 
 const navigation = [
@@ -19,7 +20,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      setIsHeaderOpen(currentScrollPos <= 0); // görgetés irányának ellenőrzésére
+      setIsHeaderOpen(currentScrollPos <= 0); // scrolling direction check
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -44,13 +45,13 @@ const Header = () => {
       <nav className={`flex items-center justify-between p-4 xl:px-4" aria-label="Global" ${isHeaderOpen ? 'h-28' : 'h-20'}`}>
 
         <div className="flex-1">
-          <Link to="/" className="-m-1.5 p-1.5 flex items-center">
+          <ScrollLink to="landing" className="-m-1.5 p-1.5 flex items-center cursor-pointer" spy={true} smooth={true} offset={-70} duration={500}>
             <img
               className={`w-auto transition-all duration-500 ${isHeaderOpen ? 'h-16' : 'h-12'}`}
               src="https://pngimg.com/uploads/letter_m/letter_m_PNG120.png"
               alt=""
             />
-          </Link>
+          </ScrollLink>
         </div>
 
         <div className="md:hidden">
@@ -90,9 +91,17 @@ const Header = () => {
               <div className="absolute top-16 right-0 w-48 bg-white border border-slate-200 rounded-lg p-2">
                   <>
                   {navigation.map((item) => (
-                    <Link key={item.name} to={item.href} onClick={closeMenu} className={`text-sm ${item.name === "Projects" ? 'text-cyan-700 font-bold' : 'text-slate-800 font-semibold'} leading-6 block px-4 py-2 hover:bg-slate-100`}>
+                    <ScrollLink
+                      key={item.name}
+                      to={item.href}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      onClick={closeMenu}
+                      className={`text-sm ${item.name === "Projects" ? 'text-cyan-700 font-bold' : 'text-slate-800 font-semibold'} leading-6 block px-4 py-2 hover:bg-slate-100 cursor-pointer`}>
                       {item.name.toUpperCase()}
-                    </Link>
+                    </ScrollLink>
                   ))
                   }
                 </>
@@ -103,9 +112,16 @@ const Header = () => {
 
         <div className="hidden md:flex md:gap-x-10">
           {navigation.map((item) => (
-            <Link key={item.name} to={item.href} className={`text-base ${item.name === "Projects" ? 'hover:text-cyan-600 text-cyan-700 font-bold' : 'hover:text-slate-600 text-slate-800 font-semibold'}`}>
+            <ScrollLink
+              key={item.name}
+              to={item.href} 
+              spy={true}
+              smooth={true}
+              offset={-70} //fine-tune the scrolling position
+              duration={500}
+              className={`text-base cursor-pointer ${item.name === "Projects" ? 'hover:text-cyan-600 text-cyan-700 font-bold' : 'hover:text-slate-600 text-slate-800 font-semibold'}`}>
               {item.name.toUpperCase()}
-            </Link>
+            </ScrollLink>
           ))}
         </div>
       </nav>

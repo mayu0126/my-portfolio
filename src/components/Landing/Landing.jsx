@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { React, useState, useEffect } from 'react';
 
-function Landing () {
+function Landing ({id}) {
 
     const [isNarrowScreen, setIsNarrowScreen] = useState(window.innerWidth < 640);
 
@@ -18,7 +18,7 @@ function Landing () {
     }, []);
 
  return (
-    <>
+    <div id={id}>
         {isNarrowScreen ? (
 
         <div className='justify-center items-center h-screen'>
@@ -192,7 +192,7 @@ function Landing () {
             </div>
         </div>
         )}
-    </>
+    </div>
  )
 }
 
