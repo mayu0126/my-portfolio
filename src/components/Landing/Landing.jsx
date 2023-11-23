@@ -111,7 +111,7 @@ function Landing ({id}) {
         ) : (
 
         <div className='flex justify-center items-center h-screen'>
-            <div className={`mt-36 w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left`}>
+            <div className='w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left'>
                 <div className='text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
                     Hey! I'm
                 </div>
@@ -183,7 +183,7 @@ function Landing ({id}) {
                 </div>
             </div>
 
-            <div className={`mt-36 sm:mt-20 md:mt-28 w-1/3 sm:w-1/4 lg:w-1/3  text-center flex justify-center items-center`}>
+            <div className={`mt-36 sm:mt-20 md:-m-16 w-1/3 sm:w-1/4 lg:w-1/3  text-center flex justify-center items-center`}>
                 <div className='w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-80 lg:h-80 xl:w-96 xl:h-96 flex justify-center items-center rounded-full overflow-hidden border-white border-4 lg:border-8'>
                     <a href="https://imgur.com/iCTFpiy">
                         <img className="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />

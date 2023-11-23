@@ -5,7 +5,7 @@ const Projects = ({id}) => {
 
   return(
     <div id={id} className='flex justify-center items-center h-screen bg-slate-900'>
-      <div className={`w-3/4 px-2 py-2 text-white`}>
+      <div className='-mt-28 w-3/4 px-2 py-2 text-white'>
         <div className='text-center'>
           <div className='mb-20 font-bold text-2xl xl:text-4xl text-amber-100'>PROJECTS</div>
           <div className='flex justify-between'>
