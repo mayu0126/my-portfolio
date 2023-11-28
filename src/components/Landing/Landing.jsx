@@ -21,8 +21,8 @@ function Landing ({id}) {
         {isNarrowScreen ? (
 
         <div className='justify-center items-center h-screen'>
-            <div className={`mt-28 p-4 w-full sm:mt-20 text-center flex flex-col sm:flex-row items-center`}>
-                <div className='w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 justify-center items-center rounded-full overflow-hidden border-white border-4'>
+            <div className='p-4 w-full sm:mt-20 text-center flex flex-col sm:flex-row justify-center items-center'>
+                <div className='mt-36 w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden border-white border-4'>
                     <a href="https://imgur.com/iCTFpiy">
                         <img className="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />
                     </a>
