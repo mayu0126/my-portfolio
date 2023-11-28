@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { React, useState, useEffect } from 'react';
 
 function Landing ({id}) {
@@ -183,8 +182,8 @@ function Landing ({id}) {
                 </div>
             </div>
 
-            <div className={`mt-36 sm:mt-20 md:-m-16 w-1/3 sm:w-1/4 lg:w-1/3  text-center flex justify-center items-center`}>
-                <div className='w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-80 lg:h-80 xl:w-96 xl:h-96 flex justify-center items-center rounded-full overflow-hidden border-white border-4 lg:border-8'>
+            <div className='mt-36 sm:-mt-8 md:-mt-10 w-1/3 sm:w-1/4 lg:w-1/3 text-center flex justify-center items-center'>
+                <div className='w-36 h-36 md:w-44 md:h-44 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 flex justify-center items-center rounded-full overflow-hidden border-white border-4 lg:border-8'>
                     <a href="https://imgur.com/iCTFpiy">
                         <img className="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />
                     </a>

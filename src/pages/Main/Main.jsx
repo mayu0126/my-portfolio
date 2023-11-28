@@ -1,4 +1,3 @@
-import { Link as ScrollLink } from 'react-scroll';
 import React from 'react';
 import Landing from '../../components/Landing';
 import AboutMe from '../../components/AboutMe';
