@@ -100,7 +100,9 @@ function Landing ({id}) {
                             Contact Me
                         </button>
                         <button className='ml-5 bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
-                            Download CV
+                            <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
+                                Download CV
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -177,7 +179,9 @@ function Landing ({id}) {
                         Contact Me
                     </button>
                     <button className='bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
-                        Download CV
+                        <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
+                            Download CV
+                        </a>
                     </button>
                 </div>
             </div>
