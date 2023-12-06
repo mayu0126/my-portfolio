@@ -17,6 +17,16 @@ function Landing ({id}) {
         };
     }, []);
 
+    const handleDownloadClick = () => {
+        const pdfUrl = 'https://github.com/mayu0126/my-portfolio/raw/main/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf';
+        
+        //Create a virtual link and trigger the download
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'ildiko_pinter_resume.pdf';
+        link.click();
+      };
+
  return (
     <div id={id}>
         {isNarrowScreen ? (
@@ -102,10 +112,11 @@ function Landing ({id}) {
                                 Contact Me
                             </button>
                         </ScrollLink>
-                        <button className='ml-5 bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
-                            <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
-                                Download CV
-                            </a>
+                        <button
+                            className='ml-5 bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'
+                            onClick={handleDownloadClick}
+                        >
+                            Download CV
                         </button>
                     </div>
                 </div>
@@ -183,10 +194,11 @@ function Landing ({id}) {
                             Contact Me
                         </button>
                     </ScrollLink>
-                    <button className='bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
-                        <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
-                            Download CV
-                        </a>
+                    <button
+                        className='bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'
+                        onClick={handleDownloadClick}
+                    >
+                        Download CV
                     </button>
                 </div>
             </div>
