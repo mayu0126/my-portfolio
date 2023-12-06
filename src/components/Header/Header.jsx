@@ -7,8 +7,8 @@ const navigation = [
   { name: 'Projects', href: 'projects' },
   { name: 'Education', href: 'education' },
   { name: 'Skills', href: 'skills' },
-  { name: 'Resume', href: 'resume' },
-  { name: `Let's talk`, href: 'letstalk' },
+  { name: 'Experience', href: 'experience' },
+  { name: `Let's talk`, href: 'contact' },
 
 ];
 
