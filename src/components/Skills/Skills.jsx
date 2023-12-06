@@ -8,7 +8,7 @@ const Skills = ({id}) => {
         <div className='text-center'>
           <div className='mb-10 font-bold text-2xl xl:text-4xl text-amber-100'> SKILLS</div>
 
-          <div className='text-center mb-4 px-3 py-3 bg-white rounded-2xl'>
+          <div className='text-center mb-16 px-3 py-3 bg-white rounded-2xl'>
             <div className='mb-5 font-semibold text-lg text-cyan-700'>Hard skills</div>
               <div className='flex-col justify-center items-center'>
 
