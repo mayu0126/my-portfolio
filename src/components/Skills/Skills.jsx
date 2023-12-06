@@ -85,8 +85,56 @@ const Skills = ({id}) => {
 
           <div className='text-center mb-4 px-3 py-3 bg-white rounded-2xl'>
             <div className='mb-5 font-semibold text-lg text-cyan-700'>Soft skills</div>
-          </div>
 
+            <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                proactivity
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                great <br/> problem solving
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                creativity
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                attention <br/> to detail
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                adaptability
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                empathy
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                team <br/> collaboration
+              </div>
+              <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                •
+              </div>
+              <div className='flex justify-center items-center text-sm font-bold text-slate-900 uppercase p-4'>
+                scrum
+              </div>
+              
+            </div>
+          </div>
 
         </div>
       </div>
