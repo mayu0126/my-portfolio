@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Landing ({id}) {
 
@@ -96,9 +97,11 @@ function Landing ({id}) {
                         </svg>
                     </div>
                     <div className='flex items-center justify-center mt-8 xs:flex-col text-xs xs:text-xs'>
-                        <button className='bg-cyan-700 hover:bg-cyan-600 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded-full xs:mr-2 sm:mr-4'>
-                            Contact Me
-                        </button>
+                        <ScrollLink to="contact" className="-m-1.5 p-1.5 flex items-center cursor-pointer" spy={true} smooth={true} offset={-70} duration={500}>
+                            <button className='bg-cyan-700 hover:bg-cyan-600 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded-full xs:mr-2 sm:mr-4'>
+                                Contact Me
+                            </button>
+                        </ScrollLink>
                         <button className='ml-5 bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
                             <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
                                 Download CV
@@ -175,9 +178,11 @@ function Landing ({id}) {
                     </svg>
                 </div>
                 <div className='mt-8 xs:flex-col text-xs xs:text-xs sm:text-xs md:text-xs lg:text-base xl:text-base'>
-                    <button className='bg-cyan-700 hover:bg-cyan-600 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded-full xs:mr-2 sm:mr-4 md:mr-6 lg:mr-8 xl:mr-10'>
-                        Contact Me
-                    </button>
+                    <ScrollLink to="contact" className="-m-1.5 p-1.5 cursor-pointer" spy={true} smooth={true} offset={-70} duration={500}>
+                        <button className='bg-cyan-700 hover:bg-cyan-600 transition duration-300 ease-in-out text-white font-bold py-2 px-4 rounded-full xs:mr-2 sm:mr-4'>
+                            Contact Me
+                        </button>
+                    </ScrollLink>
                     <button className='bg-amber-300 hover:bg-amber-200 transition duration-300 ease-in-out text-slate-900 font-bold py-2 px-4 rounded-full'>
                         <a href="https://github.com/mayu0126/my-portfolio/blob/missing-menu-implementations/src/assets/resume/ildiko_pinter__FULLSTACK-10M-DAYTIME_resume.pdf" target="_blank" rel="noopener noreferrer">
                             Download CV
