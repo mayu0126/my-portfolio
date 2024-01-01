@@ -18,7 +18,7 @@ const Projects = ({id}) => {
   }, []);
 
   return(
-    <div id={id} className={`${isNarrowScreen ? `flex-col justify-center items-center` : `justify-center items-center h-screen`} flex bg-slate-900`}>
+    <div id={id} className={`${isNarrowScreen ? `flex-col` : `h-screen`} flex justify-center items-center bg-slate-900`}>
       <div className={`${isNarrowScreen ? "mt-10" : "-mt-28"} w-3/4 px-2 py-2 text-white`}>
         <div className='text-center'>
           <div className={`${isNarrowScreen ? "mt-10" : "mt-24"} mb-10 xl:mb-14 2xl:mb-20 font-bold text-2xl md:text-3xl xl:text-4xl text-amber-100`}>PROJECTS</div>
