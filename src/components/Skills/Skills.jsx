@@ -1,6 +1,20 @@
-import { React } from 'react';
+import { React, useState, useEffect } from 'react';
 
 const Skills = ({id}) => {
+
+  const [isNarrowScreen, setIsNarrowScreen] = useState(window.innerWidth < 1280);
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsNarrowScreen(window.innerWidth < 1280);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
 
   return(
     <div id={id} className='flex justify-center items-center h-screen bg-slate-900'>
@@ -13,6 +27,7 @@ const Skills = ({id}) => {
               <div className='flex-col justify-center items-center'>
 
                 <div className='flex justify-center items-center'>
+
                   <div className='p-4 w-24 h-24 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full'>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript"/>
                   </div>
@@ -28,6 +43,7 @@ const Skills = ({id}) => {
                   <div className='p-4 w-24 h-24 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full'>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="express"/>
                   </div>
+
 
                   <div className='p-4 w-24 h-24 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full'>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5"/>
