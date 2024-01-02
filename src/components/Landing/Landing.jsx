@@ -28,11 +28,11 @@ function Landing ({id}) {
       };
 
  return (
-    <div id={id}>
+    <div id={id} className='mb-36'>
         {isNarrowScreen ? (
 
-        <div className='justify-center items-center h-screen'>
-            <div className='p-4 w-full sm:mt-20 text-center flex flex-col sm:flex-row justify-center items-center'>
+        <div className='justify-center items-center max-h-fit'>
+            <div className='p-4 w-full text-center flex flex-col sm:flex-row justify-center items-center'>
                 <div className='mt-36 w-36 h-36 xs:w-36 xs:h-36 sm:w-40 sm:h-40 rounded-full overflow-hidden border-white border-4'>
                     <a href="https://imgur.com/iCTFpiy">
                         <img className="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />
@@ -41,20 +41,20 @@ function Landing ({id}) {
             </div>
         
             <div className='flex justify-center items-center'>
-                <div className={`w-2/3 sm:w-1/3 px-2 py-2 text-white text-left`}>
+                <div className="w-5/6 sm:w-1/3 px-2 py-2 text-white text-left">
                     <div className='text-center'>
-                        <div className='text-xs sm:text-xs'>
+                        <div className='text-sm sm:text-xs'>
                             Hey! I'm
                         </div>
                         <div className='font-bold text-2xl text-amber-100'>
                             <div>ILDIKÓ PINTÉR</div>
                             <div className='-mt-1 font-light text-lg'>- MAYU -</div>
                         </div>
-                        <div className='font-bold text-xs sm:text-sm'>
+                        <div className='font-bold text-sm sm:text-sm'>
                             Full-Stack Developer
                         </div>
                     </div>
-                    <div className='mt-5 text-xs sm:text-xs text-justify'>
+                    <div className='mt-5 text-sm sm:text-xs text-justify'>
                         I'm an enthusiastic junior full-stack developer with a passion for continual learning. I'm known for my sociable and helpful nature, which extends beyond the workplace to my personal life. I maintain a range of hobbies and thrive on a consistently active lifestyle.
                     </div>
                     <div className='flex items-center justify-center mt-5'>
@@ -125,8 +125,8 @@ function Landing ({id}) {
 
         ) : (
 
-        <div className='flex justify-center items-center h-screen'>
-            <div className='w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left'>
+        <div className='flex justify-center items-center max-h-fit'>
+            <div className='mt-56 w-1/3 sm:w-1/2 md:w-1/2 lg:w-1/3 px-2 py-2 text-white text-left'>
                 <div className='text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg'>
                     Hey! I'm
                 </div>
@@ -203,7 +203,7 @@ function Landing ({id}) {
                 </div>
             </div>
 
-            <div className='mt-36 sm:-mt-8 md:-mt-10 w-1/3 sm:w-1/4 lg:w-1/3 text-center flex justify-center items-center'>
+            <div className='mt-56 sm:mt-36 md:mt-44 w-1/3 sm:w-1/4 lg:w-1/3 text-center flex justify-center items-center'>
                 <div className='w-36 h-36 md:w-44 md:h-44 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 flex justify-center items-center rounded-full overflow-hidden border-white border-4 lg:border-8'>
                     <a href="https://imgur.com/iCTFpiy">
                         <img className="w-full h-full object-cover" src="https://i.imgur.com/iCTFpiy.jpg" alt="me" title="source: imgur.com" />
