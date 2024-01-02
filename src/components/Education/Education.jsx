@@ -21,7 +21,7 @@ const Education = ({id}) => {
       
       <div className='mt-20 mb-20 w-5/6 sm:w-2/3 md:w-1/2 lg:w-1/3 px-2 py-2 lg:mr-20 text-slate-900'>
         <div className={`${isNarrowScreen ? "text-center" : "text-left"}`}>
-          <div className='mb-10 ml-5 font-bold text-2xl lg:text-3xl xl:text-4xl text-cyan-700'> EDUCATION</div>
+          <div className={`${isNarrowScreen ? "" : "ml-5"} mb-10 font-bold text-2xl lg:text-3xl xl:text-4xl text-cyan-700`}> EDUCATION</div>
 
           <div className={`${isNarrowScreen ? "h-fit mb-4" : "hidden"}`}>
             <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

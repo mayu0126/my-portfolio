@@ -18,13 +18,12 @@ const Skills = ({id}) => {
 
   return(
     <div id={id} className='flex justify-center items-center max-h-fit bg-slate-900'>
-      <div className='w-auto xs:w-5/6 mt-20 mb-20 px-1 py-1 lg:px-2 lg:py-2 text-slate-900'>
-        <div className='text-center'>
+      <div className='w-max xs:w-5/6 mt-20 mb-20 px-1 py-1 lg:px-2 lg:py-2 text-slate-900'>
+        <div className='text-center items-center'>
           <div className='mb-10 font-bold text-2xl xl:text-4xl text-amber-100'> SKILLS</div>
 
-
             <div className='text-center mb-16 px-3 py-3 bg-white rounded-2xl'>
-            <div className='mb-5 font-semibold text-lg text-cyan-700'>Hard skills</div>
+            <div className='mb-5 mt-5 font-semibold text-lg text-cyan-700'>Hard skills</div>
 
             {isNarrowScreen ? (
               <div className='flex-col justify-center items-center'>
@@ -179,13 +178,11 @@ const Skills = ({id}) => {
           </div>
 
           <div className='text-center mb-4 px-1 py-1 lg:px-3 lg:py-3 bg-white rounded-2xl'>
-            <div className='mb-5 font-semibold text-lg text-cyan-700'>Soft skills</div>
-
+            <div className='mb-5 mt-5 font-semibold text-lg text-cyan-700'>Soft skills</div>
 
             {isNarrowScreen ? (
               <div className='flex-col justify-center items-center'>
 
-                <div className='flex justify-center items-center'>
                   <div className='flex justify-center items-center text-xs font-bold text-slate-900 uppercase p-2 md:p-3'>
                     proactivity
                   </div>
@@ -207,9 +204,9 @@ const Skills = ({id}) => {
                   <div className='flex justify-center items-center text-xs font-bold text-slate-900 uppercase p-2 md:p-3'>
                     attention <br/> to detail
                   </div>
-                </div>
-
-                <div className='flex justify-center items-center'>
+                  <div className='flex justify-center items-center text-base font-bold text-cyan-700'>
+                    •
+                  </div>
                   <div className='flex justify-center items-center text-xs font-bold text-slate-900 uppercase p-2 md:p-3'>
                     adaptability
                   </div>
@@ -231,7 +228,7 @@ const Skills = ({id}) => {
                   <div className='flex justify-center items-center text-xs font-bold text-slate-900 uppercase p-2 md:p-3'>
                     scrum
                   </div>
-                </div>
+
 
               </div>
             ) : (
