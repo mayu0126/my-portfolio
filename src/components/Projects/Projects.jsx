@@ -18,10 +18,10 @@ const Projects = ({id}) => {
   }, []);
 
   return(
-    <div id={id} className={`${isNarrowScreen ? `flex-col justify-center items-center` : `justify-center items-center h-screen`} flex bg-slate-900`}>
-      <div className={`${isNarrowScreen ? "mt-10" : "-mt-28"} w-3/4 px-2 py-2 text-white`}>
+    <div id={id} className={`${isNarrowScreen ? `flex-col` : `max-h-fit`} flex justify-center items-center bg-slate-900`}>
+      <div className="w-5/6 px-2 py-2 text-white">
         <div className='text-center'>
-          <div className={`${isNarrowScreen ? "mt-10" : "mt-24"} mb-10 xl:mb-14 2xl:mb-20 font-bold text-2xl md:text-3xl xl:text-4xl text-amber-100`}>PROJECTS</div>
+          <div className={`${isNarrowScreen ? "mt-10" : "mt-20"} mb-10 xl:mb-14 2xl:mb-20 font-bold text-2xl md:text-3xl xl:text-4xl text-amber-100`}>PROJECTS</div>
           <div className={`${isNarrowScreen ? `flex-col items-center` : `justify-between`} flex`}>
 
             <div className={`${isNarrowScreen ? `w-11/12` : `w-1/3 px-4`} flex flex-col xl:px-6 2xl:px-8 3xl:px-10`}>
@@ -32,7 +32,7 @@ const Projects = ({id}) => {
                 </a>
               </div>
               <div className='mb-4 mt-4 font-bold text-md text-cyan-500'>FOOD IMPORT LABEL GENERATOR</div>
-              <div className='text-justify mb-4'>
+              <div className='text-sm md:text-base text-justify mb-4'>
                 With this web application you can create Hungarian labels for your imported food products by providing the English text, and you can enhance the quality of each label. Leveraging translations derived from the most recent EU and local Hungarian regulations, it ensures accuracy and legal compliance.
               </div>
               <a href="https://food-import-label-generator.onrender.com" className='mt-auto'>
@@ -53,7 +53,7 @@ const Projects = ({id}) => {
                 </a>
               </div>
               <div className='mb-4 mt-4 font-bold text-md text-cyan-500'>SOLAR WATCH</div>
-              <div className='text-justify mb-4'>
+              <div className='text-sm md:text-base text-justify mb-4'>
                 SolarWatch is a simple application designed to deliver precise sunrise and sunset information for a specified city. The app saves the data that has already been queried from the external API to its own database for future usage. Enjoy accurate sunrise and sunset data for your favorite cities!
               </div>
               <a href="https://solarwatch-mayu0126.onrender.com/" className='mt-auto'>
@@ -74,7 +74,7 @@ const Projects = ({id}) => {
                 </a>
               </div>
               <div className='mb-4 mt-4 font-bold text-md text-cyan-500'>THE EVERYTHING</div>
-              <div className='text-justify mb-4'>
+              <div className='text-sm md:text-base text-justify mb-4'>
               The Everything is one of our school teamworks in which I was responsible for mainly the frontend of the application. It is a website where you can access top-quality tools for your DIY and home improvement projects, available for both rental and purchase. If you're a new user, you can easily register and place an order.
               </div>
               <a href="https://the-everything-app-static.onrender.com/" className='mt-auto'>
